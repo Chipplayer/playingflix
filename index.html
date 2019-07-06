@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<!--Google Analytics-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130099386-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-130099386-2');
+</script>
+
+  <meta name="keywords" content="exams,marks,percent,percentage,calculator,takeout,calculate,exam marks,percent,sarkari result,exam result,playingflix,playingflix.com,playing-flix,calc,">
+  <meta name="description" content="Exam Marks Percentage Calculator">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exam Marks to Percentage Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+  @import url('https://fonts.googleapis.com/css?family=Nunito|Quicksand');
+
+
+
+        p {
+            
+            font-family: 'Quicksand', sans-serif;
+
+            font-weight: bold;
+
+            font-size: 20px;
+
+            color:#19323C;
+
+            }
+
+            input:disabled{
+                background-color: #ffffff;
+            }
+
+            footer.footer{
+                padding-bottom:20px;
+                background-color: #ffffff;
+            }
+
+    </style>
+  </head>
+  <body>
+  <section class="section is-fullheight" style="padding-top:20px;padding-bottom:17px;">
+    <div class="container" style="text-align: center;">
+      
+<!--main area-->
+<div class="columns" style="padding-top:0px;">
+    <div class="column"></div>
+    <div class="column">
+<img src="https://img.icons8.com/clouds/200/000000/student-male.png">
+
+<p>Total Marks of Exam</p>
+<input class="input is-info" style="margin-bottom:20px;max-width: 500px;" oninput="calculate()" type="text" id="totalmarks" placeholder="Total Marks">
+
+
+<p>Your Marks</p>
+<input class="input is-info" style="margin-bottom:29px;max-width: 500px;" oninput="calculate()" type="text" id="yourmarks" placeholder="Your Marks">
+
+
+<p style="font-size:25px;">Your Percentage: <input style="border: 0px;font-size:25px;width:20%;color:#207DFF;" id="result" disabled></p>
+</div>
+<div class="column"></div>
+</div>
+<!--End of Container and Section-->
+    </div>
+  </section>
+
+  <!--Ads-->
+  
+
+      <script>
+      
+      
+          function calculate() {
+              var myBox1 = document.getElementById('totalmarks').value; 
+              var myBox2 = document.getElementById('yourmarks').value;
+              var result = document.getElementById('result'); 
+              var myResult = myBox2 / myBox1 * 100;
+             
+                document.getElementById('result').value = myResult + "%";
+      
+          }
+      </script>
+  </body>
+</html>
